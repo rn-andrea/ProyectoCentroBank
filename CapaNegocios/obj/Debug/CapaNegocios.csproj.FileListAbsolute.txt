@@ -1,0 +1,15 @@
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\CapaNegocios.dll.config
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\CapaNegocios.dll
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\CapaNegocios.pdb
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\CapaDatos.dll
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\EntityFramework.dll
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\EntityFramework.SqlServer.dll
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\CapaDatos.pdb
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\CapaDatos.dll.config
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\EntityFramework.xml
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\bin\Debug\EntityFramework.SqlServer.xml
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\obj\Debug\CapaNegocios.csprojAssemblyReference.cache
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\obj\Debug\CapaNegocios.dll
+D:\UNIVERSIDAD\CUC\VII CUATRIMESTRE\Sitios\Proyectos\P2\ProyectoAxel\ProyectoBank\CapaNegocios\obj\Debug\CapaNegocios.pdb
