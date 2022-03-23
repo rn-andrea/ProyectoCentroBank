@@ -74,6 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\materialize.min.css" />
     <Content Include="Formularios\CalCompraLote.aspx" />
     <Content Include="Formularios\CalCompraVehiculo.aspx" />
     <Content Include="Formularios\CalCompraVehiSostenible.aspx" />
@@ -90,8 +91,57 @@
     <Content Include="Formularios\RecepcionSolicitudes.aspx" />
     <Content Include="Formularios\registro.aspx" />
     <Content Include="Formularios\Solicitud.aspx" />
+    <Content Include="img\20200811215130.leasing-renting.jpg" />
+    <Content Include="img\20211105112646.carros-electricos.jpg" />
+    <Content Include="img\2919600.png" />
+    <Content Include="img\3078954.png" />
+    <Content Include="img\7-razones-por-las-que-comprar-un-lote-en-costa-rica-es-una-buena-idea.png" />
+    <Content Include="img\about-img.jpg" />
+    <Content Include="img\bancarización.jpg" />
+    <Content Include="img\bank.jpg" />
+    <Content Include="img\bank2.jpg" />
+    <Content Include="img\beneficios.jpg" />
+    <Content Include="img\cajero.png" />
+    <Content Include="img\calculos.jpg" />
+    <Content Include="img\calculosl.jpg" />
+    <Content Include="img\casallaes.jpg" />
+    <Content Include="img\casas.jfif" />
+    <Content Include="img\compracasa.jfif" />
+    <Content Include="img\consulta-deudas.jpg" />
+    <Content Include="img\credito-para-compra-de-vehiculo.jpg" />
+    <Content Include="img\creditos-especificos.jpg" />
+    <Content Include="img\depositphotos_147823461-stock-photo-businesspeople-signing-papers.jpg" />
+    <Content Include="img\depositphotos_30597729-stock-photo-hands-of-three-people-signing.jpg" />
+    <Content Include="img\depositphotos_3201090-stock-photo-computer-lab.jpg" />
+    <Content Include="img\DeudasOtraPersona.png" />
+    <Content Include="img\Foto-compra-carro.jpg" />
+    <Content Include="img\images.jpg" />
+    <Content Include="img\impacto-economia.jpg" />
+    <Content Include="img\indicadores-que-es.jpg" />
+    <Content Include="img\leasing2.jpg" />
     <Content Include="img\logoCentroBank.png" />
+    <Content Include="img\lotes.jpg" />
+    <Content Include="img\m2.jpg" />
+    <Content Include="img\Minicred2.jpg" />
+    <Content Include="img\minicredito.jpg" />
+    <Content Include="img\multiproposito.jpg" />
+    <Content Include="img\persona-deudas.jpg" />
+    <Content Include="img\persona.jpg" />
+    <Content Include="img\prestamo vivienda.jpg" />
+    <Content Include="img\prestamospago deudas.jfif" />
+    <Content Include="img\prestamoviajes.jpg" />
+    <Content Include="img\primer-plano-persona-pensando-comprar-o-vender-casa_181624-24928.jpg" />
+    <Content Include="img\refinanciacion-de-hipotecas-900x600.jpg" />
+    <Content Include="img\requisitos %281%29.jpg" />
+    <Content Include="img\requisitos.jpg" />
+    <Content Include="img\translado.jpg" />
+    <Content Include="img\u2.jpg" />
+    <Content Include="img\unificacion deudas.jpg" />
     <Content Include="img\usuario.png" />
+    <Content Include="img\usuarios.jpg" />
+    <Content Include="img\Vehiculos-Electricos.png" />
+    <Content Include="img\vehiculos.jpg" />
+    <Content Include="JS\materialize.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
