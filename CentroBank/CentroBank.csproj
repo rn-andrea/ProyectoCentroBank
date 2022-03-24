@@ -74,9 +74,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Formularios\CalculadoraCreditos.aspx" />
+    <Content Include="Formularios\Creditos.aspx" />
+    <Content Include="Formularios\Index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\CalculadoraCreditos.aspx.cs">
+      <DependentUpon>CalculadoraCreditos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\CalculadoraCreditos.aspx.designer.cs">
+      <DependentUpon>CalculadoraCreditos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Creditos.aspx.cs">
+      <DependentUpon>Creditos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Creditos.aspx.designer.cs">
+      <DependentUpon>Creditos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CalculadoraModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -89,11 +114,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{C9FF4DB9-3E1C-4E01-9FA0-814CA239F804}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
       <Project>{d9471187-0aab-4d0d-82ca-ab47dde2fa8f}</Project>
       <Name>CapaNegocios</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

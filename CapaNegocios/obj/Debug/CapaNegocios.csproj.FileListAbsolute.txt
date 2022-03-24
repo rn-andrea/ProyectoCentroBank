@@ -1,0 +1,15 @@
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\CapaNegocios.dll.config
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\CapaNegocios.dll
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\CapaNegocios.pdb
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\CapaDatos.dll
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\EntityFramework.dll
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\CapaDatos.pdb
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\CapaDatos.dll.config
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\EntityFramework.xml
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\obj\Debug\CapaNegocios.dll
+C:\Users\Andrea\Desktop\CentroBank\CapaNegocios\obj\Debug\CapaNegocios.pdb

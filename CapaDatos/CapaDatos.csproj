@@ -51,6 +51,8 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,19 +76,96 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ProyectoStiosModels.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProyectoStiosModels.edmx</DependentUpon>
+      <LastGenOutput>ProyectoStiosModels.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProyectoStiosModels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProyectoStiosModels.edmx</DependentUpon>
+      <LastGenOutput>ProyectoStiosModels.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encargados.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoSolicitud.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PosicionPagina.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provincias.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoStiosModels.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoStiosModels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoStiosModels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoStiosModels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoStiosModels.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepcionSolicitudes.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Roles.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudCredito.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tendencias.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCambio.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCreditos.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoIdentificacion.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VisitaPagina.cs">
+      <DependentUpon>ProyectoStiosModels.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <EntityDeploy Include="ProyectoStiosModels.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProyectoStiosModels.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ProyectoStiosModels.edmx.diagram">
+      <DependentUpon>ProyectoStiosModels.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
