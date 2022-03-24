@@ -14,7 +14,7 @@
               </asp:DropDownList>
       
             <label>Moneda</label>
-          <asp:DropDownList ID="dpDatos" runat="server" OnSelectedIndexChanged="dpDatos_SelectedIndexChanged">
+          <asp:DropDownList ID="dpDatos" runat="server" OnSelectedIndexChanged="dpDatos_SelectedIndexChanged" OnTextChanged="txtcha" AutoPostBack="true">
               <asp:ListItem Value="1">Colones</asp:ListItem>
               <asp:ListItem Value="2">Dolares</asp:ListItem>
           </asp:DropDownList>
@@ -25,8 +25,9 @@
 
             <br />
              <label>Plazo</label>
-            <asp:TextBox ID="txtplazo1" runat="server" type="number" min="6" pattern="[0-9]+" required="true" ></asp:TextBox>
-        <p>Plazo mínimo 12 meses- Plazo máximo 360 meses</p>
+            <asp:TextBox ID="txtplazo1" runat="server" type="number" pattern="[0-9]+" required="true" ></asp:TextBox>
+       <asp:Label ID="labelplazo" runat="server"></asp:Label>
+       
             <br />
              <label>Tasa (%)</label>
             <asp:TextBox ID="txttaza1" ReadOnly="true" runat="server"></asp:TextBox>

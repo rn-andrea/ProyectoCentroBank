@@ -32,6 +32,7 @@ namespace CentroBank.Formularios
                 string tipo = dpCreditos.SelectedValue;
                 txttaza1.Text = Convert.ToString(cal.GetTasaP1(tipo));
                 labelmontos.Text = "Mínimo: ₡250 000/ $400 Máximo: ₡15 000 000/ $23000 ";
+                labelplazo.Text = "Plazo de 6 a 240 meses";
                 txtcalculo1.Text = "";
                 lblmensaje1.Text = "";
             }
@@ -51,15 +52,24 @@ namespace CentroBank.Formularios
             if (monedaSelect == "1")
             {
                 int valor = cal.LimiteDinero(crediSelect,float.Parse( txtmonto1.Text));
+                int val = cal.LimitePlazo(crediSelect, int.Parse(txtplazo1.Text));
                 if (valor == 1)
                 {
-                    calModel.Monto = Convert.ToInt32(txtmonto1.Text);
-                    calModel.plazo = Convert.ToInt32(txtplazo1.Text);
-                    calModel.taza = float.Parse(txttaza1.Text);
-                    cal.Calculo(calModel.Monto, calModel.taza, calModel.plazo);
-                    decimal result = Convert.ToDecimal(cal.resultado);
-                    double res = cal.resultado;
-                    txtcalculo1.Text = Convert.ToString(decimal.Round(result, 2));
+                    if(val == 1)
+                    {
+                        calModel.Monto = Convert.ToInt32(txtmonto1.Text);
+                        calModel.plazo = Convert.ToInt32(txtplazo1.Text);
+                        calModel.taza = float.Parse(txttaza1.Text);
+                        cal.Calculo(calModel.Monto, calModel.taza, calModel.plazo);
+                        decimal result = Convert.ToDecimal(cal.resultado);
+                        double res = cal.resultado;
+                        txtcalculo1.Text = "₡"+ Convert.ToString(decimal.Round(result, 2));
+                    }
+                    else
+                    {
+                        lblmensaje1.Text = "El valor del plazo es incorrecto";
+                    }
+                    
                 }
                 else
                 {
@@ -67,17 +77,27 @@ namespace CentroBank.Formularios
                 }
             }else if(monedaSelect=="2")
             {
+                
                 int valor2 = cal.LimiteDineroD(crediSelect, float.Parse(txtmonto1.Text));
+                int val = cal.LimitePlazo(crediSelect, int.Parse(txtplazo1.Text));
                 if (valor2 == 1)
                 {
-                    calModel.Monto = Convert.ToInt32(txtmonto1.Text);
-                    calModel.plazo = Convert.ToInt32(txtplazo1.Text);
-                    calModel.taza = float.Parse(txttaza1.Text);
-                    calModel.taza = float.Parse(txttaza1.Text);
-                    cal.Calculo(calModel.Monto, calModel.taza, calModel.plazo);
-                    decimal result = Convert.ToDecimal(cal.resultado) * cal.GetDollarp();
-                    
-                    txtcalculo1.Text = Convert.ToString(decimal.Round(result, 2));
+                    if (val == 1)
+                    {
+                        calModel.Monto = Convert.ToInt32(txtmonto1.Text);
+                        calModel.plazo = Convert.ToInt32(txtplazo1.Text);
+                        calModel.taza = float.Parse(txttaza1.Text);
+                        calModel.taza = float.Parse(txttaza1.Text);
+                        cal.Calculo(calModel.Monto, calModel.taza, calModel.plazo);
+                        decimal result = Convert.ToDecimal(cal.resultado) * cal.GetDollarp();
+
+                        txtcalculo1.Text = "₡"+Convert.ToString(decimal.Round(result, 2));
+                    }
+                    else
+                    {
+                        lblmensaje1.Text = "El valor del plazo es incorrecto";
+                    }
+                   
                 }
                 else
                 {
@@ -126,6 +146,7 @@ namespace CentroBank.Formularios
 
         protected void dpDatos_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -146,47 +167,64 @@ namespace CentroBank.Formularios
             if (tipo == "Préstamo Personal")
             {
                 labelmontos.Text = "Mínimo: ₡250 000/ $400 Máximo: ₡15 000 000/ $23000 ";
+                labelplazo.Text = "Plazo de 6 a 240 meses";
 
             }
             else if (tipo == "Unificación de deudas")
             {
                 labelmontos.Text = "Mínimo: ₡100 000/ $200 Máximo: ₡15 000 000/ $23000 ";
-
+                labelplazo.Text = "Plazo de 6 a 60 meses";
             }
             else if (tipo == "MiniCredito")
             {
                 labelmontos.Text = "Mínimo: ₡100 000/ $200 Máximo: ₡650 000/ $1 000 ";
+                labelplazo.Text = "Plazo de 6 a 60 meses";
 
             }
             else if (tipo == "Préstamo Multiproposito")
             {
                 labelmontos.Text = "Mínimo: ₡1 000 000/ $1500 Máximo: ₡40 000 000/ $62 000 ";
+                labelplazo.Text = "Plazo de 6 a 240 meses";
             }
             else if (tipo == "Compra Vehículos")
             {
                 labelmontos.Text = "Mínimo: ₡1 000 000/ $1500 Máximo: ₡40 000 000/ $62 000 ";
+                labelplazo.Text = "Plazo de 6 a 96 meses";
             }
             else if (tipo == "Vehículo Sostenible")
             {
                 labelmontos.Text = "Mínimo: ₡1 000 000/ $1500 Máximo: ₡40 000 000/ $62 000 ";
+                labelplazo.Text = "Plazo de 6 a 96 meses";
             }
             else if (tipo == "Leasing Financiero")
             {
                 labelmontos.Text = "Mínimo: ₡1 000 000/ $1500 Máximo: ₡40 000 000/ $62 000 ";
+                labelplazo.Text = "Plazo de 6 a 96 meses";
 
             }
             else if (tipo == "Compra Vivienda")
             {
                 labelmontos.Text = "Mínimo: ₡5 000 000/ $7500 Máximo: ₡100 000 000/ $152 000 ";
+                labelplazo.Text = "Plazo de 120 a 360 meses";
             }
             else if (tipo == "Compra Lote")
             {
                 labelmontos.Text = "Mínimo: ₡5 000 000/ $7500 Máximo: ₡100 000 000/ $152 000 ";
+                labelplazo.Text = "Plazo de 120 a 360 meses";
             }
             else if (tipo == "Traslado de Hipoteca")
             {
                 labelmontos.Text = "Mínimo: ₡5 000 000/ $7500 Máximo: ₡100 000 000/ $152 000 ";
+                labelplazo.Text = "Plazo de 120 a 360 meses";
             }
+        }
+
+        protected void txtcha(object sender, EventArgs e)
+        {
+            txtcalculo1.Text = "";
+            lblmensaje1.Text = "";
+            txtmonto1.Text = "";
+            txtplazo1.Text = "";
         }
     }
 }

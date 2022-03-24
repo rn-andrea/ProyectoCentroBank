@@ -20,10 +20,10 @@ namespace CapaNegocios.Logica
         public double resultado { get; set; }
         public double Calculo(int monto, float taza, int plazo)
         {
-
-            float a = (1 + taza / 100);
+            float t2 = taza / 12;
+            float a = (1 + t2 / 100);
             Double x = Math.Pow(a, -plazo);
-            resultado = ((taza / 100) * monto) / (1 - x);
+            resultado = ((t2 / 100) * monto) / (1 - x);
 
 
 
@@ -44,6 +44,130 @@ namespace CapaNegocios.Logica
             }
 
             
+        }
+        public int LimitePlazo(string tipoP, int plazo)
+        {//limite de dinero dolares
+            if (tipoP == "Préstamo Personal")
+            {
+                if (plazo >= 6 && plazo <= 240)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            else if (tipoP == "Unificación de deudas")
+            {
+                if (plazo >= 6 && plazo <= 60)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            else if (tipoP == "MiniCredito")
+            {
+                if (plazo >= 6 && plazo <= 60)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            else if (tipoP == "Préstamo Multiproposito")
+            {
+                if (plazo >= 6 && plazo <= 240)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            else if (tipoP == "Compra Vehículos")
+            {
+                if (plazo >= 6 && plazo <= 96)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            else if (tipoP == "Vehículo Sostenible")
+            {
+                if (plazo >= 6 && plazo <= 96)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            else if (tipoP == "Leasing Financiero")
+            {
+                if (plazo >= 6 && plazo <= 96)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            else if (tipoP == "Compra Vivienda")
+            {
+                if (plazo >= 120 && plazo <= 360)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            else if (tipoP == "Compra Lote")
+            {
+                if (plazo >= 120 && plazo <= 360)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            else if (tipoP == "Traslado de Hipoteca")
+            {
+                if (plazo >= 120 && plazo <= 360)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+            return 2;
         }
 
         public int LimiteDineroD(string tipoP, float monto)
